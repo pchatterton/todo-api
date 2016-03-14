@@ -16,6 +16,4 @@ config :lager,
 
 config :todo_api, TodoApi.Postgres,
   adapter: Ecto.Adapters.Postgres,
-  username: "brandon",
-  database: "db",
-  password: "09211989"
+  url: {:system, "DATABASE_URL"}

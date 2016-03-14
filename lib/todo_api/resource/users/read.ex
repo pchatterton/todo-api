@@ -8,8 +8,7 @@ defmodule TodoApi.Resource.Users.Read do
   mediatype Mazurka.Mediatype.Hyperjson do
     action do
       %{
-        "id" => user.id
-        "name" => user.fname
+        "user" => user
       }
     end
   end

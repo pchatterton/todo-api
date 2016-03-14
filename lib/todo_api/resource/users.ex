@@ -7,8 +7,7 @@ defmodule TodoApi.Resource.Users do
     action do
       %{
         "collection" => for user <- users do
-          link_to(TodoApi.Resource.Users.Read, user: user),
-          "name" => user.fname
+          link_to(TodoApi.Resource.Users.Read, user: user)
         end
       }
     end
