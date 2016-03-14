@@ -2,7 +2,8 @@ use Mix.Config
 
 config :logger, :console,
   level: :info,
-  format: "$message"
+  format: "$message
+"
 
 # disable lager output
 config :lager,
